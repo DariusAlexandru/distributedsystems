@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Password generator</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    </head>
+    <body>
+        <img src="https://is5-ssl.mzstatic.com/image/thumb/Purple126/v4/b6/a3/ee/b6a3ee79-4a63-7ffa-4a77-3bc784b6ecf6/kpm.png/1200x600bf.png" width="750" heigth="300">
+        <br>
+        <form action="var1" method="post">
+            {% for message in get_flashed_messages() %}
+                <p>{{message}}</p>
+            {% endfor %}
+            <br>
+            <input type="number" name="name_input">
+            <br>
+            <br>
+            <br>
+            <input type="submit" value="Generate" id="var1">
+         </form>
+    </body>
+</html>
